@@ -52,3 +52,7 @@ CREATE TABLE medical_histories_treatments(
     FOREIGN KEY (treatments_id) REFERENCES treatments (id),
     PRIMARY KEY (medical_histories_id, treatments_id)
 );
+
+--Creating index for the joined table to improve performance
+CREATE INDEX medical_histories_id_index ON medical_histories_treatments(medical_histories_id);
+CREATE INDEX treatments_id_index ON medical_histories_treatments(treatments_id);
