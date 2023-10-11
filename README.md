@@ -30,7 +30,6 @@
 
 - This repo is about making a database using PostgreSQL based on a diagram.
 
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -68,23 +67,31 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-
 ## 👥 Authors <a name="authors"></a>
+
 👤 **GeekyHacks**
+
 - GitHub: [Geekyhacks](https://github.com/GeekyHacks)
 - Twitter: [Geekydart](https://twitter.com/GeekyDart)
 - LinkedIn: [Abdullah Nasser](https://www.linkedin.com/in/abdullah-nasser-711625268/)
 
+👤 **Eugene Omwomo**
+
+- GitHub: [@Omwomo](https://github.com/Omwomo)
+- Twitter: [@eugeneoduor9](https://twitter.com/eugeneoduor9)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Omwomo)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features
-- Building a more complex MedicalClinic database with more tables and data 
+
+- Building a more complex MedicalClinic database with more tables and data
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GeekyHacks/VetClinic/issues).
+Feel free to check the [issues page](https://github.com/GeekyHacks/MedicalClinic/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,6 +105,7 @@ people.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank:
+
 - Microverse Review Team
 - Microverse Community in Slack
 - my Mentor @Strangeal
