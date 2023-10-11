@@ -48,3 +48,12 @@ CREATE TABLE invoices(
     FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id),
     PRIMARY KEY (id)
 );
+
+-- create join table medical_histories-treatments table
+CREATE TABLE medical_histories-treatments(
+    medical_histories_id INT,
+    treatments_id INT,
+    FOREIGN KEY (medical_histories_id) REFERENCES medical_histories (id),
+    FOREIGN KEY (treatments_id) REFERENCES treatments (id),
+    PRIMARY KEY (medical_histories_id, treatments_id)
+);
