@@ -15,6 +15,7 @@ CREATE TABLE medical_histories(
     PRIMARY KEY (id),
     FOREIGN KEY (patient_id) REFERENCES patients (id)
 );
+CREATE INDEX patient_id_index ON medical_histories(patient_id);
 -- create treatments table
 CREATE TABLE treatments(
     id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
@@ -34,6 +35,8 @@ CREATE TABLE invoice_items(
     FOREIGN KEY (treatment_id) REFERENCES treatments (id),
     PRIMARY KEY (id)
 );
+CREATE INDEX invoice_id_index ON invoice_items(invoice_id);
+CREATE INDEX treatment_id_index ON invoice_items(treatment_id);
 -- create invoice_items table
 CREATE TABLE invoices(
     id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
@@ -44,6 +47,8 @@ CREATE TABLE invoices(
     FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id),
     PRIMARY KEY (id)
 );
+CREATE INDEX medical_history_id_index ON invoices(medical_history_id);
+
 -- create join table medical_histories-treatments table
 CREATE TABLE medical_histories_treatments(
     medical_histories_id INT,
